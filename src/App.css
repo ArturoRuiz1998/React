@@ -39,3 +39,40 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #626970;
   }
+
+  .dynamic-text {
+    font-size: 1em;
+    animation: colorChange 4s infinite; /* Animación para cambiar el color */
+    transition: opacity 1s ease-in-out; /* Transición para desvanecer */
+    opacity: 1; /* Opacidad inicial */
+}
+
+/* Animación para cambiar el color */
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+/* Efecto de desvanecimiento entre palabras */
+.fade {
+    animation: fadeInOut 4s infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

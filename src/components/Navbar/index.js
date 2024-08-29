@@ -21,16 +21,16 @@ const Navbar = () => {
           <FaBars onClick={() => {
             setIsOpen(!isOpen)
           }} />
-        </MobileIcon>
+        </MobileIcon> 
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href="#about">Inicio</NavLink>
+          <NavLink href='#skills'>Habilidad</NavLink>
+          <NavLink href='#experience'>Experiencia</NavLink>
+          <NavLink href='#projects'>Proyectos</NavLink>
+          <NavLink href='#education'>Educación</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          <GitHubButton href="https://www.linkedin.com/in/arturo-ruiz-hurtado-9256ba251/" target="_blank">LinkedIn</GitHubButton>
         </ButtonContainer>
         {
           isOpen &&
